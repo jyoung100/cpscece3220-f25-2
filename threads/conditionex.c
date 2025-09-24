@@ -52,7 +52,7 @@ int main(int argc, char **argv)
 
 	while (1)
 	{
-		enqueue_task("./interactivebank.c");
+		enqueue_task("./bank/interactivebank.c");
 		enqueue_task("./Makefile");
 		enqueue_task("pthreadex.c");
 		enqueue_task("conditionex.c");
