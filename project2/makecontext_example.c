@@ -14,7 +14,7 @@ void thread_func(int value)
 	printf("thread: do something else...\n");
 	swapcontext(&thread_context, &main_context);
 	printf("thread: returning...aaah!\n");
-	//swapcontext(&thread_context, &main_context);
+	swapcontext(&thread_context, &main_context);
 }
 
 #define STACK_SIZE 32000
