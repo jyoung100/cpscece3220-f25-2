@@ -36,6 +36,8 @@ int main(int argc, char** argv)
 	printf("Can I read from it...%d\n",*another);
 
 	//and mmap can also be used to map files into memory!
+	//FILE *fp = fopen("/home/vagrant/test.txt", "rw");
+	//int fd = fileno(fp);
 	int fd = open("/home/vagrant/test.txt", O_RDWR, S_IRUSR | S_IWUSR);
 	struct stat sb;
 
