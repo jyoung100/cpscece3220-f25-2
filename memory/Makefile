@@ -25,4 +25,4 @@ rva:
 	$(CC) $(CFLAGS) -c $<
 
 clean:
-	rm -f $(BINS) *.o *.s a.out
+	rm -rf $(BINS) *.o *.s a.out *.dSYM
